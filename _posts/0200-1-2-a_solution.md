@@ -1,3 +1,3 @@
 ## A solution
 
-![Reverse Proxy](/images/reverse_proxy.png)
+![Reverse Proxy]({{ site.baseurl }}images/reverse_proxy.png)
