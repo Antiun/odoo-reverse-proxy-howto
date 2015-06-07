@@ -1,0 +1,23 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               'Odoo - Reverse Proxy HowTo'
+tagline:             'How to install and configure a reverse proxy to server Odoo applications'
+url:                 http://antiun.github.io/odoo-reverse-proxy
+# paginate:            1
+baseurl:             ""
+
+# About/contact
+author:
+  name:              'Antiun Ingeniería, S.L.'
+  url:               http://www.antiun.net
+  email:             rafabn@antiun.com
+
+# Custom vars
+version:             0.0.1
+github:
+  repo:              https://github.com/Antiun/odoo-reverse-proxy

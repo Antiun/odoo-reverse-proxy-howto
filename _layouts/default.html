@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ page.author }}">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <link rel="stylesheet" href="css/deck.js/deck.core.min.css">
+    <link rel="stylesheet" href="css/deck.js/deck.goto.min.css">
+    <link rel="stylesheet" href="css/deck.js/deck.menu.min.css">
+    <link rel="stylesheet" href="css/deck.js/deck.navigation.min.css">
+    <link rel="stylesheet" href="css/deck.js/deck.status.min.css">
+    <link rel="stylesheet" href="css/deck.js/deck.hash.min.css">
+    <link rel="stylesheet" href="css/deck.js/deck.scale.min.css">
+
+    <link rel="stylesheet" href="css/deck.js/swiss.min.css">
+    <link rel="stylesheet" href="css/deck.js/fade.min.css">
+    <link rel="stylesheet" href="css/syntax.css"/>
+
+    <script src="js/modernizr/modernizr.min.js"></script>
+  </head>
+
+  <body class="deck-container">
+
+    <section class="slide">
+      <h1>{{ page.title }}</h1>
+    </section>
+
+    {{ content }}
+
+    <!-- deck.navigation snippet -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- deck.hash snippet -->
+    <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+    <script src="js/jquery/jquery.min.js"></script>
+
+    <!-- Deck Core and extensions -->
+    <script src="js/deck.js/deck.core.min.js"></script>
+    <script src="js/deck.js/deck.hash.min.js"></script>
+    <script src="js/deck.js/deck.menu.min.js"></script>
+    <script src="js/deck.js/deck.goto.min.js"></script>
+    <script src="js/deck.js/deck.status.min.js"></script>
+    <script src="js/deck.js/deck.navigation.min.js"></script>
+    <script src="js/deck.js/deck.scale.min.js"></script>
+
+    <!-- Initialize the deck -->
+    <script>
+      $(function() {
+        $.deck('.slide');
+      });
+    </script>
+
+  </body>
+</html>
