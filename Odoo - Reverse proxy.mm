@@ -3,12 +3,21 @@
 <node COLOR="#000000" CREATED="1433058493068" ID="ID_425504879" MODIFIED="1433617182584" TEXT="Odoo - Reverse proxy">
 <font NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties"/>
-<node COLOR="#0033ff" CREATED="1433064744792" ID="ID_454320299" MODIFIED="1433064948733" POSITION="right" TEXT="The problem">
+<node COLOR="#0033ff" CREATED="1433064744792" FOLDED="true" ID="ID_454320299" MODIFIED="1433667919475" POSITION="right" TEXT="The problem">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1433064748023" ID="ID_324789042" MODIFIED="1433064764430" TEXT="Port 8069">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1433667808761" ID="ID_1708074006" MODIFIED="1433667845093" TEXT="Werkzeug">
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1433667858014" ID="ID_968990669" MODIFIED="1433667870070" TEXT="Log"/>
+<node COLOR="#111111" CREATED="1433667871384" ID="ID_150840846" MODIFIED="1433667874489" TEXT="Redirect"/>
+<node COLOR="#111111" CREATED="1433667876889" ID="ID_1958568638" MODIFIED="1433667883286" TEXT="SSL Certificates"/>
+</node>
+<node COLOR="#990000" CREATED="1433667890750" ID="ID_969335282" MODIFIED="1433667912411" TEXT="No standard HTTP port">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
 </node>
 <node COLOR="#00b439" CREATED="1433064765519" ID="ID_459377544" MODIFIED="1433064788398" TEXT="SSL certificate management">
 <edge STYLE="bezier" WIDTH="thin"/>
@@ -45,7 +54,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1433064950329" ID="ID_876136545" MODIFIED="1433064954509" POSITION="right" TEXT="The solution">
+<node COLOR="#0033ff" CREATED="1433064950329" FOLDED="true" ID="ID_876136545" MODIFIED="1433667920368" POSITION="right" TEXT="A solution">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1433064956255" ID="ID_1877279130" MODIFIED="1433634172418" TEXT="Reverse proxy">
@@ -70,6 +79,10 @@
 <node COLOR="#990000" CREATED="1433065022126" ID="ID_1839173374" MODIFIED="1433065025784" TEXT="Nginx">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
+</node>
+<node COLOR="#00b439" CREATED="1433667725157" ID="ID_532717137" MODIFIED="1433667732124" TEXT="Reverse proxy squema">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
 <node COLOR="#0033ff" CREATED="1433065051091" ID="ID_837913585" MODIFIED="1433617104267" POSITION="left" TEXT="References">
@@ -146,11 +159,27 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1433617185576" ID="ID_1250657065" MODIFIED="1433617222705" POSITION="right" TEXT="Install Nginx 1.4 in Ubuntu 14.04">
+<node COLOR="#0033ff" CREATED="1433617185576" FOLDED="true" ID="ID_1250657065" MODIFIED="1433689132892" POSITION="right" TEXT="Install Nginx 1.4 in Ubuntu 14.04">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
+<node COLOR="#00b439" CREATED="1433667771303" ID="ID_1157169175" MODIFIED="1433667774399" TEXT="Nginx">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#0033ff" CREATED="1433071681850" ID="ID_1403026705" MODIFIED="1433071693812" POSITION="right" TEXT="Install Apache 2.4 in Ubuntu 14.04">
+<node COLOR="#00b439" CREATED="1433667738884" ID="ID_1114335797" MODIFIED="1433667748370" TEXT="Default page">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433667749779" ID="ID_784905997" MODIFIED="1433667757436" TEXT="Default VH for HTTP">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433667749779" ID="ID_554915324" MODIFIED="1433667762196" TEXT="Default VH for HTTPS">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1433071681850" FOLDED="true" ID="ID_1403026705" MODIFIED="1433689133850" POSITION="right" TEXT="Install Apache 2.4 in Ubuntu 14.04">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1433071743575" ID="ID_69994705" MODIFIED="1433071757586" TEXT="Apache 2">
@@ -161,12 +190,76 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1433071776794" ID="ID_1910021965" MODIFIED="1433071784323" TEXT="Module: http_proxy">
+<node COLOR="#00b439" CREATED="1433667738884" ID="ID_1172771352" MODIFIED="1433667748370" TEXT="Default page">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433667749779" ID="ID_1168291163" MODIFIED="1433667757436" TEXT="Default VH for HTTP">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433667749779" ID="ID_1147998157" MODIFIED="1433667762196" TEXT="Default VH for HTTPS">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433071776794" ID="ID_1910021965" MODIFIED="1433667764530" TEXT="Module: http_proxy">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1433095703224" ID="ID_1033774582" MODIFIED="1433095710343" POSITION="right" TEXT="Odoo configuration">
+<node COLOR="#0033ff" CREATED="1433073120412" FOLDED="true" ID="ID_123840557" MODIFIED="1433696406914" POSITION="right" TEXT="Creating a PKI with XCA">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="18"/>
+<node COLOR="#00b439" CREATED="1433689127329" ID="ID_1881206224" MODIFIED="1433689129681" TEXT="PKI: Public Key Infraestructure">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433688777221" ID="ID_451424967" MODIFIED="1433688781402" TEXT="Download XCA">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433688782365" ID="ID_1975884554" MODIFIED="1433688784990" TEXT="New database">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433688786010" ID="ID_576975237" MODIFIED="1433688787947" TEXT="CA Root">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433688788945" ID="ID_1767377238" MODIFIED="1433688791149" TEXT="Wildcard">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433688792156" ID="ID_1926490017" MODIFIED="1433688793928" TEXT="Client">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433690716506" ID="ID_517596646" MODIFIED="1433690736504" TEXT="Export certificates">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1433690747442" ID="ID_1796151237" MODIFIED="1433690751839" TEXT="CA Root certificate">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1433690752852" ID="ID_1873894841" MODIFIED="1433690757196" TEXT="Wildcard certificate">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1433690758122" ID="ID_1577854050" MODIFIED="1433690762868" TEXT="Wildcard private key">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1433690763774" ID="ID_1058246322" MODIFIED="1433690773340" TEXT="Client PKCS#12">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1433693642330" ID="ID_1004578474" MODIFIED="1433693919147" TEXT="Import certificates in Proxy server">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1433693653302" ID="ID_1552148870" MODIFIED="1433693923913" TEXT="Import certificates in browser">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1433095703224" ID="ID_1033774582" MODIFIED="1433696408424" POSITION="right" TEXT="Odoo configuration">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1433095726484" ID="ID_58192951" MODIFIED="1433095728412" TEXT="workers">
@@ -178,7 +271,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1433073150957" ID="ID_46118163" MODIFIED="1433095856695" POSITION="right" TEXT="HTTP VH for Odoo">
+<node COLOR="#0033ff" CREATED="1433073150957" ID="ID_46118163" MODIFIED="1433696409631" POSITION="right" TEXT="HTTP VH for Odoo">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1433095857472" ID="ID_1065841837" MODIFIED="1433095860555" TEXT="Simple">
@@ -193,10 +286,6 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-</node>
-<node COLOR="#0033ff" CREATED="1433073120412" ID="ID_123840557" MODIFIED="1433095899199" POSITION="right" TEXT="Creating PKI with XCA">
-<edge STYLE="sharp_bezier" WIDTH="8"/>
-<font NAME="SansSerif" SIZE="18"/>
 </node>
 <node COLOR="#0033ff" CREATED="1433073161742" ID="ID_582888907" MODIFIED="1433095896487" POSITION="right" TEXT="HTTPS VH for Odoo">
 <edge STYLE="sharp_bezier" WIDTH="8"/>

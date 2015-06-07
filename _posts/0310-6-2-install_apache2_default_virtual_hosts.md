@@ -1,10 +1,19 @@
+## Install Apache 2.4 in Ubuntu 14.04
+
+### Default HTTPS virtual host
+
+{% highlight Bash %}
+sudo nano /etc/apache2/sites-available/default-ssl.conf
+{% endhighlight %}
+
+{% highlight ApacheConf linenos %}
 <VirtualHost *:443>
    ServerAdmin webmaster@example.com
    ServerName default.example.com
 
    SSLEngine on
-   SSLProtocol all -SSLv2 -SSLv3
-   SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM
+   SSLProtocol           all -SSLv2 -SSLv3
+   SSLCipherSuite        ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM
    SSLCertificateFile    /etc/ssl/wildcard.example.com/public.crt
    SSLCertificateKeyFile /etc/ssl/wildcard.example.com/private.pem
 
@@ -29,3 +38,6 @@
 
    CustomLog /var/log/apache2/default-ssl.access.log combined
 </VirtualHost>
+{% endhighlight %}
+
+Download this file: [default-ssl.conf](files/default-ssl.conf)
