@@ -5,7 +5,7 @@ layout: default
 ---
 
 {% for post in site.posts reversed %}
-<section class="slide" id="{{ post.label }}">
+<section class="slide antiun-slide" id="{{ post.label }}">
 {{ post.content }}
 </section>
 {% endfor %}

@@ -25,8 +25,8 @@ server {
         try_files $uri $uri/ =404;
     }
 
-    access_log   /var/log/nginx/default.access.log;
-    error_log    /var/log/nginx/default.error.log;
+    access_log /var/log/nginx/default.access.log;
+    error_log  /var/log/nginx/default.error.log;
 }
 {% endhighlight %}
 

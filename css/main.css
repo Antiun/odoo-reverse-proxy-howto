@@ -1,3 +1,22 @@
 .text-right {
     text-align: right;
 }
+
+.image-left {
+    float: left;
+    margin: 5px 10px 5px 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.antiun-slide {
+    background: transparent url('../images/antiun-background.png') no-repeat 50px 400px;
+}

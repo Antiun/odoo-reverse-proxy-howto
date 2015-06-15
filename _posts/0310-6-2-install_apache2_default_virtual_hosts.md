@@ -40,4 +40,4 @@ sudo nano /etc/apache2/sites-available/default-ssl.conf
 </VirtualHost>
 {% endhighlight %}
 
-Download this file: [default-ssl.conf](files/default-ssl.conf)
+Download this file: [default-ssl.conf](files/apache2/default-ssl.conf)
