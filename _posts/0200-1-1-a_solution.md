@@ -10,3 +10,4 @@ label: a-solution
 * Available technology
     * Nginx 1.4
     * Apache httpd 2.4
+    * HAProxy 1.5
