@@ -1,6 +1,6 @@
 ## Odoo behind Nginx
 
-### HTTPS virtual host (2/2)
+### HTTPS virtual host (2/3)
 
 (...)
 
