@@ -1,6 +1,6 @@
 ## Odoo behind Nginx
 
-### HTTPS virtual host (1/2)
+### HTTPS virtual host (1/3)
 
 {% highlight Bash %}
 sudo nano /etc/nginx/sites-available/odoo-ssl
