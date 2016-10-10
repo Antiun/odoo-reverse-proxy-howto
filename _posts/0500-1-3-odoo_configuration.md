@@ -1,4 +1,4 @@
-## Odoo configuration
+## Odoo configuration   ##  /etc/odoo-server.conf
 
 ### Example Nginx
 
